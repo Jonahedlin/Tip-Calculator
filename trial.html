@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="button" value="1%" id="percen1" onclick="Percen()">
+        <input type="button" value="2%" id="percen2" onclick="Percen()">
+        <input type="button" value="5%" id="percen5" onclick="Percen()">
+        <input type="button" value="10%" id="percen10"onclick="Percen()" >
+        <input type="button" value="15%" id="percen15" onclick="Percen()">
+        <input type="button" value="Custom" id="percenCustom" onclick="Percen()">
+    </div>
+
+    <div>
+        <input type="button" value="Enter" id="percen">
+        <input type="button" value="Edit" id="percen">
+    </div>
+    <div>
+        <input type="text" placeholder="TIP" id="tipBox">
+        <input type="button" value="Enter" id="percen">
+    </div>
+    <div class="textsection">
+        <span id="text">
+            <p>
+                Your tip will be: 
+            </p>
+        </span>
+    </div>
+    <div>
+        <span id="buttons">
+            <input type="range" value="0" min="0" max="100" step="1" id="customtip" oninput="output.value = this.value">
+            <output id="output">0</output>
+            <input type="button" value="Enter" id="enter" onclick="enter()">
+        </span>
+        <p>
+            <span id="text">
+            Your tip was
+            </span>
+        </p>
+
+    </div>
+    <div>
+        <input type="button" value="Yes" id="yesTrial">
+        <input type="button" value="No" id="noTrial">
+    </div>
+</body>
+</html>
